@@ -30,8 +30,8 @@ export default function ListingItem({ listing }) {
             
             {
                listing.price.toLocaleString('en-US')
-            }
-            {listing.type === 'rent' && 'rs / month'}
+            }rs
+            {listing.type === 'rent' && ' / month'}
           </p>
           <div className='text-slate-700 flex gap-4'>
             <div className='font-bold text-xs'>

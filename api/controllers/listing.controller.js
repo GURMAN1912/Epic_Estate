@@ -87,7 +87,7 @@ export const deleteListing = async (req, res, next) => {
       let type = req.query.type;
   
       if (type === undefined || type === 'all') {
-        type = { $in: ['sale', 'rent'] };
+        type = { $in: ['sell', 'rent'] };
       }
   
       const searchTerm = req.query.searchTerm || '';
